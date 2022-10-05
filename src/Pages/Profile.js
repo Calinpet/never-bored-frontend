@@ -1,6 +1,6 @@
 import React from 'react';
-import NAV from "./components/Nav";
-import Footer from "./components/Footer";
+import Navbar from '../Components/Navbar';
+import Footer from "../Components/Footer";
 
 function Profile(props){
     const id = props.match.params.id;
@@ -8,7 +8,7 @@ function Profile(props){
     const user = profile.find(p => p._id === id);
     return(
         <div>
-        <NAV/>
+        <Navbar/>
         <h1>Profile Page</h1>
         <img src={user.image} />
         <h3>About Us: {user.about}</h3>

@@ -7,7 +7,7 @@ const Main = (props) => {
 
 const [couple, setCouple] = useState (null)
 
-const URL = ''
+const URL = "https://never-bored-couple-backend.herokuapp.com/"
 
 const getCouple = async () => {
   const response = await fetch(URL)
